@@ -1,12 +1,12 @@
 # Write a program to display all prime numbers within a range, take start range and end range from the user
-a=int(input("Enter the starting range: "))
-b=int(input("Enter the ending range: "))
+start=int(input("Enter the starting range: "))
+end=int(input("Enter the ending range: "))
 x=[]
-for i in range(a,b+1):
+for i in range(start,end+1):
     if i>1:
         for j in range(2,i):
             if i%j==0:
-                break
+               break
         else:
             x.append(i)
 #print(x)
